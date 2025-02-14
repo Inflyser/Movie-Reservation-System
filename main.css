@@ -21,19 +21,19 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+  
 }
 
 .heght__line{
+   
+   
     width: 100%;
-    height: 8vh; 
-
-    background-size: cover;
-
-    z-index: 4000;
+    border-top: 1.2px solid #000000;
+    
 }
 
 .header {
-    padding-top: 15px;
+    padding-top: 0px;
     position: center;
     
 }
@@ -46,18 +46,38 @@ h1, h2, h3, h4, h5, h6 {
 .nav{
     font-size: 20px;
     text-transform: uppercase;
+    margin: 18px;
+    
 }
 
 .nav__link{
     display: inline-block;
     vertical-align: top;
-    margin: 0 30px;
+    margin: 0 35px;
     color:#000;
     text-decoration: none;
     transition: color 0.2s linear;
+    
+  
 }
 
 .nav__link:hover{
     color: gray;
 }
 
+
+.background {
+    width: 100%;
+    height: 100vh; 
+    background:
+    url("image/Rectangle.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.block__title {
+   
+    position: center;
+    
+}
