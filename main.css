@@ -6,6 +6,23 @@ body{
     color: #333;
 }
 
+.example::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Скрыть вертикальную полосу прокрутки */
+::-webkit-scrollbar {
+    width: 0; /* Устанавливаем ширину полосы прокрутки на 0 */
+  }
+  
+  /* Скрыть горизонтальную полосу прокрутки */
+::-webkit-scrollbar {
+  height: 0; /* Устанавливаем высоту полосы прокрутки на 0 */
+}
+  
+  
+
+
 *,
 *::before,
 *::after {
@@ -21,33 +38,29 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-   
+    display: flex;
+    align-content: space-between;
+    justify-content: space-around;
 }
 
 .heght__line{
-   
-   
     width: 100%;
     border-top: 1.2px solid #000000;
-    
 }
 
 .header {
     padding-top: 0px;
-    position: center;
-    
 }
-.header__inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/* .header__inner{ */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+/* } */
 
 .nav{
     font-size: 20px;
     text-transform: uppercase;
     margin: 18px;
-    
 }
 
 .nav__link{
@@ -57,8 +70,6 @@ h1, h2, h3, h4, h5, h6 {
     color:#000;
     text-decoration: none;
     transition: color 0.2s linear;
-    
-  
 }
 
 .nav__link:hover{
@@ -66,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.background {
+.intro {
     width: 100%;
     height: 100vh; 
     background:
@@ -76,8 +87,40 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.block__title {
-   
-    position: center;
+.background1 {
+    padding-top: 30px;
+    width: 100%;
+    height: 220vh; 
+    background:
+    url("image/Rectangle.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.background__space {
+    width: 100%;
+    border-top: 70px solid #ffffff;
     
+}
+
+.grid__cintainer {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Создаем 3 колонки одинаковой ширины */
+    grid-gap: 40px; /* Добавляем промежутки между изображениями */
+  }
+  
+.grid__cintainer img {
+  width: 95%; /* Изображения занимают всю ширину ячейки */
+  height: auto; /* Сохраняем пропорции */
+}
+
+.header__text {
+    text-align: center; 
+    color: #ffffff;
+    font-size: 38px;
+    margin: 10px;
 }
