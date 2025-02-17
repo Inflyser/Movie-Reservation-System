@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sait3</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">       
+            <nav class="nav">
+                <a class="nav__link" href="main.html">Главная</a>
+                <a class="nav__link" href="#">Моя бронь</a>
+                <a class="nav__link" href="#">Фильмы</a>
+                <a class="nav__link" href="#">Login</a>
+                <a class="nav__link" href="register.html">Register</a>
+            </nav>          
+        </div>
+        <div class="heght__line"></div>
+    </header>
+
+
+    <div class="intro">
+        <div class="container">
+            <div class="registration-form">
+                
+                <nav class="nav"><h2>Регистрация</h2></nav>
+                <form id="registrationForm" action="#" method="post">
+            
+                  <div class="form-group">
+                    <label for="firstName">Имя:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <div class="error" id="firstNameError"></div>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="lastName">Фамилия:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    <div class="error" id="lastNameError"></div>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error" id="passwordError"></div>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="confirmPassword">Подтвердите пароль:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <div class="error" id="confirmPasswordError"></div>
+                  </div>
+            
+                  <div class="form-group">
+                    <button type="submit">Зарегистрироваться</button>
+                  </div>
+            
+                </form>
+            </div>
+        
+            
+        </div>
+    </div>
+
+
+</body>
+</html>

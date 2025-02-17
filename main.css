@@ -12,16 +12,10 @@ body{
 
   /* Скрыть вертикальную полосу прокрутки */
 ::-webkit-scrollbar {
-    width: 0; /* Устанавливаем ширину полосы прокрутки на 0 */
+    width: 0;
+    height: 0; 
   }
   
-  /* Скрыть горизонтальную полосу прокрутки */
-::-webkit-scrollbar {
-  height: 0; /* Устанавливаем высоту полосы прокрутки на 0 */
-}
-  
-  
-
 
 *,
 *::before,
@@ -29,8 +23,9 @@ body{
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6{
     margin: 0;
+    padding: 0;
 }
 
 /* Container */
@@ -39,8 +34,8 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    align-content: space-between;
-    justify-content: space-around;
+    align-content: center;
+    justify-content: center;
 }
 
 .heght__line{
@@ -49,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-    padding-top: 0px;
+    padding-top: 5px;
 }
 /* .header__inner{ */
     /* display: flex; */
@@ -79,12 +74,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro {
     width: 100%;
-    height: 100vh; 
+    height: auto; 
     background:
     url("image/Rectangle.png") no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;
-    position: relative;
+   
 }
 
 .background1 {
@@ -122,5 +117,58 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center; 
     color: #ffffff;
     font-size: 38px;
-    margin: 10px;
+    margin: 30px 10px 10px 10px;
 }
+
+.registration-form {
+    margin: 12vh;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+  }
+
+  .registration-form h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Важно для правильного отображения ширины */
+  }
+
+  .form-group button {
+   
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  .form-group button:hover {
+    background-color: #3e8e41;
+  }
+
+  .form-group .error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
