@@ -16,7 +16,6 @@ body{
     height: 0; 
   }
   
-
 *,
 *::before,
 *::after {
@@ -30,12 +29,35 @@ h1, h2, h3, h4, h5, h6{
 
 /* Container */
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.intro__header {
+  width: auto;
+  height: auto;
+  margin: 10px auto;
+  
+  
+
+  z-index: 2000;
+  position: relative;
+  
+}
+
+.container__image {
+  width: auto;
+  height: auto;
+
+  position: relative; /* Абсолютное позиционирование */
+  top: -20vh; /* Начало от верхнего края */
+  left: 50vh; /* Начало от левого края */
+  
+  z-index: 1000; 
 }
 
 
@@ -51,15 +73,17 @@ h1, h2, h3, h4, h5, h6{
 
 .sfera {
   position: relative;
-  top: -24%;
+  top: 0%;
   left: -15%;
   opacity: 0.8;
+  z-index: 1000;
 }
 
 .sfera1 {
   position:relative;
   top: -28%;
   left: -22%;
+  z-index: 1000;
 }
 
 .sfera2 {
@@ -74,6 +98,7 @@ h1, h2, h3, h4, h5, h6{
   position:relative;
   top: -130%;
   left: 70%;
+  z-index: 1000;
 }
 
 
@@ -181,9 +206,6 @@ h1, h2, h3, h4, h5, h6{
   opacity: 0; /* Скрываем текст при добавлении класса hidden */
 }
 
-
-
-
 .fade-in-image {
   opacity: 0; /* Скрываем изображение по умолчанию */
   transition: opacity 1s ease; /* Плавный переход для изменения прозрачности */
@@ -213,8 +235,8 @@ h1, h2, h3, h4, h5, h6{
 .header__text {
     text-align: center; 
     color: #ffffff;
-    font-size: 38px;
-    margin: 30px 10px 10px 10px;
+    font-size: 42px;
+    margin: 30px 10px 50px 10px;
 }
 
 .registration-form {
