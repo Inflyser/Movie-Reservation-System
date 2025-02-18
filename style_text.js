@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('.fade-in-image');
+    const texts = document.querySelectorAll('.fade-in-text');
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    images.forEach(image => {
-        observer.observe(image); // Начинаем наблюдение за каждым изображением
+    texts.forEach(text => {
+        observer.observe(text); // Начинаем наблюдение за каждым текстовым блоком
     });
 });
-
