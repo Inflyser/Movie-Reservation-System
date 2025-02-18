@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прокрутка вниз</title>
+    <style>
+        html {
+            scroll-behavior: smooth; /* Плавная прокрутка */
+        }
+        .section {
+            height: 800px; /* Высота секции для демонстрации */
+            background-color: lightblue;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<a class="scroll-link" href="#section2">Прокрутить к секции 2</a>
+<div class="section" id="section1">Секция 1</div>
+<div class="section" id="section2">Секция 2</div>
+
+<script>
+// JavaScript для обработки прокрутки
+document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // Отменяем стандартное поведение ссылки
+        const targetId = this.getAttribute('href'); // Получаем ID цели
+        const targetElement = document.querySelector(targetId); // Находим элемент
+        const topOffset = targetElement.getBoundingClientRect().top + window.pageYOffset; // Рассчитываем позицию
+
+        window.scrollTo({
+            top: topOffset,
+            behavior: 'smooth' // Плавная прокрутка
+        });
+    });
+});
+</script>
+
+</body>
+</html>

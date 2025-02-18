@@ -16,6 +16,11 @@ body{
     height: 0; 
   }
   
+html {
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+
 *,
 *::before,
 *::after {
@@ -35,36 +40,32 @@ h1, h2, h3, h4, h5, h6{
   display: flex;
   align-content: center;
   justify-content: center;
+
+  z-index: 2000; 
 }
 
 .intro__header {
-  width: auto;
-  height: auto;
-  margin: 10px auto;
+ 
+  margin: 15% auto;
   
-  
-
   z-index: 2000;
   position: relative;
   
 }
 
 .container__image {
-  width: auto;
-  height: auto;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  align-content: center;
+  justify-content: center;
 
   position: relative; /* Абсолютное позиционирование */
-  top: -20vh; /* Начало от верхнего края */
-  left: 50vh; /* Начало от левого края */
+
   
   z-index: 1000; 
 }
 
-
-.heght__line{
-    width: 100%;
-    border-top: 1.2px solid #000000;
-}
 
 .header {
   display: flex;
@@ -73,23 +74,26 @@ h1, h2, h3, h4, h5, h6{
 
 .sfera {
   position: relative;
-  top: 0%;
-  left: -15%;
+  top: -60%;
+  left: -12%;
+  
   opacity: 0.8;
   z-index: 1000;
 }
 
 .sfera1 {
   position:relative;
-  top: -28%;
-  left: -22%;
+  top: -55%;
+  left: -18%;
+  opacity: 0.8;
   z-index: 1000;
 }
 
 .sfera2 {
   position:relative;
-  top: -122%;
-  left: 75%;
+  top: -138%;
+  left: 80%;
+  opacity: 0.8;
   z-index: 1000;
 
 }
@@ -97,7 +101,8 @@ h1, h2, h3, h4, h5, h6{
 .sfera3 {
   position:relative;
   top: -130%;
-  left: 70%;
+  left: 77%;
+  opacity: 0.8;
   z-index: 1000;
 }
 
@@ -144,7 +149,7 @@ h1, h2, h3, h4, h5, h6{
   left: 0;
   bottom: -4px; /* Расстояние от текста */
   width: 100%;
-  height: 1.5px; /* Толщина полоски */
+  height: 1.6px; /* Толщина полоски */
   background-color: white; /* Цвет полоски */
   opacity: 0; /* Скрываем полоску по умолчанию */
   transition: opacity 0.3s ease; /* Плавная анимация */
@@ -157,12 +162,13 @@ h1, h2, h3, h4, h5, h6{
 
 
 .intro {
-    width: 100%;
-    height: 200vh; 
-    background-color: black;
-    -webkit-background-size: cover;
-    background-size: cover;
-   
+  width: 100%;
+  height: 200vh; 
+  background-color: black;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+ 
 }
 
 .intro1 {
@@ -208,7 +214,7 @@ h1, h2, h3, h4, h5, h6{
 
 .fade-in-image {
   opacity: 0; /* Скрываем изображение по умолчанию */
-  transition: opacity 1s ease; /* Плавный переход для изменения прозрачности */
+  transition: opacity 1.5s ease; /* Плавный переход для изменения прозрачности */
 }
 
 .fade-in-image.visible {
@@ -223,7 +229,7 @@ h1, h2, h3, h4, h5, h6{
     margin: 25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Создаем 3 колонки одинаковой ширины */
-    grid-gap: 40px; 
+    grid-gap: 45px; 
    /* Добавляем промежутки между изображениями */
   }
   
