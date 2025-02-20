@@ -9,61 +9,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema Smart</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <nav class="nav">
+            <a class="nav__link" href="main.html">Главная</a>
+            <a class="nav__link" href="#">Моя бронь</a>
+            <a class="scroll-link nav__link" href="#section2">Фильмы</a>
+            <a class="nav__link" href="register.html">Login</a>
+            <p class="nav__link__login">/</p>
+            <a class="nav__link" href="register.html">Register</a>
+        </nav>       
+    </header> 
+
     <div class="intro">
-        <header class="header">
-            <nav class="nav">
-                <a class="nav__link" href="main.html">Главная</a>
-                <a class="nav__link" href="#">Моя бронь</a>
-                <a class="scroll-link nav__link" href="#section2">Фильмы</a>
-                <a class="nav__link" href="register.html">Login</a>
-                <p class="nav__link__login">/</p>
-                <a class="nav__link" href="register.html">Register</a>
-            </nav>       
-        </header> 
         
-        <div class="intro__header">
-            <div class="container">
-                <h1 class="header__text">Cinema Smart</h1>
+        <div class="container__image">
+            <div class="container__center">
+                <h1 class="header__text text-container" id="text"></h1>
             </div>
         </div>
-        
-        
-        <div class="sfera"><img src="image/Ellipse 4.png" alt=""></div> 
-        <div class="sfera1"><img src="image/Ellipse 5.png" alt=""></div> 
-        <div class="sfera2"><img src="image/Ellipse 6.png" alt=""></div> 
-        <div class="sfera3"><img src="image/Ellipse 7.png" alt=""></div> 
-       
 
-        <div class="container">
-            <img src="image/spderman.png" alt=""> 
-        </div>
+        <!-- <div class="container__image2">
+            <img src="image/spderman.png"> 
+        </div> -->
     </div>
     
-   
 
-
-    
-
-
-   
     <div class="intro1">  
-        <header class="header">
-            
-            <div class="container">  
-                <div id="section2">  
-                    <nav class="nav"><h1 class="header__text">Фильмы</h1></nav>
-               
-                </div> 
-            </div>
-        </header>
+          
+        <div class="container" id="section2">  
+            <h1 class="header__text fade-in-text">Фильмы</h1>
+        </div>
+      
         
         <div class="container">
             <div class="grid__cintainer">
-                <img src="image/Rectangle 27.png" alt="" class="fade-in-image">
-                <img src="image/Rectangle 27.png" alt="" class="fade-in-image">
-                <img src="image/Rectangle 27.png" alt="" class="fade-in-image">
+                <img src="image/film/intes.png" alt="" class="fade-in-image">
+                <img src="image/film/prizrak.png" alt="" class="fade-in-image">
+                <img src="image/film/termitator.png" alt="" class="fade-in-image">
                 <img src="image/Rectangle 27.png" alt="" class="fade-in-image">
                 <img src="image/Rectangle 27.png" alt="" class="fade-in-image">
                 <img src="image/Rectangle 27.png" alt="" class="fade-in-image">
@@ -75,15 +59,10 @@
     </div>
     
 
-    <header class="header">
-        <div class="container">
-            <div class="background__space">
-               
-               
-            </div>
-        </div>
-    </header>
-    <script src="style_pr.js"></script>
-    <script src="styler.js"></script>
+    
+    <script src="scripts/style_pr.js"></script>
+    <script src="scripts/styler.js"></script>
+    <script src="scripts/style_text.js"></script>
+    <script src="scripts/style_text1.js"></script>
 </body>
 </html>
