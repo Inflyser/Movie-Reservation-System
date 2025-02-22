@@ -31,4 +31,13 @@ if (infoType === 'film1') { // Интерстеллар
     document.getElementById('year').textContent = '...';
     document.getElementById('country').textContent = '...';
     document.getElementById('genre').textContent = '...';
+
+} else if (infoType === 'film3') {
+    document.getElementById('content').textContent = 'Это вторая часть информации.';
+    document.getElementById('name__film').textContent = 'Унесённые призраками';
+    document.getElementById('short__text').textContent = '...';
+    document.getElementById('year').textContent = '...';
+    document.getElementById('country').textContent = '...';
+    document.getElementById('genre').textContent = '...';
+
 }

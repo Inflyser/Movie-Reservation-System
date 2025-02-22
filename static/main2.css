@@ -1,121 +1,17 @@
 
-/* Containers */
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  margin: 0 auto;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  
-  z-index: 2000; 
-  position: relative;
-}
 
-.container__image2 {
-  width: 100%;
-  height: auto; 
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  z-index: 1000; 
-}
 
-.container__image {
-  width: 100%;
-  height: 180vh; 
-  background:
-  url("../image/Mask\ group.png") no-repeat center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  position: relative;
-  z-index: 1000; 
-}
-
-.container__center {
-  width: 100%;
-  max-width: 1200px;
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  
-  z-index: 2000; 
-  position: relative;
-}
-
-/* Header */
-
-.header {
-  width: 100%; /* Занимает всю ширину */
-  position: fixed;
-  display: flex;
-  justify-content: flex-end;
-  background-color: #00000081;
-
-  z-index: 5000;
-}
-
-.nav {
-  font-size: 15px;
-  text-transform: uppercase;
-  margin: 18px;
-
-  text-decoration: none; 
-  transition: text-decoration 0.3s ease;
-}
-
-.nav__link {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 25px;
-  color:white;
-  text-decoration: none;
-  transition: color 0.2s linear;
-  position: relative;
-  text-decoration: none;
-  z-index: 2000;
-}
-
-.nav__link__login {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 -22px;
-  color:white;
-  text-decoration: none;
-  transition: color 0.2s linear;
-  z-index: 2000;
-}
-
-.nav__link::after {
-content: '';
-position: absolute;
-left: 0;
-bottom: -4px; /* Расстояние от текста */
-width: 100%;
-height: 1.6px; /* Толщина полоски */
-background-color: white; /* Цвет полоски */
-opacity: 0; /* Скрываем полоску по умолчанию */
-transition: opacity 0.3s ease; /* Плавная анимация */
-}
-
-.nav__link:hover::after {
-opacity: 1; /* Показываем полоску при наведении */
-}
 
 /* Intro */
 
-.intro {
+.intro200 {
   width: 100%;
   height: 200vh; 
   background-color: rgb(1, 0, 2);
 }
 
-.intro1 {
+.intro300 {
   width: 100%;
   height: 300vh; 
   background-color: rgb(1, 0, 2);
@@ -149,12 +45,7 @@ opacity: 1; /* Показываем полоску при наведении */
   height: auto; /* Сохраняем пропорции */
 }
 
-.header__text {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.644);
-  color: #ffffff;
-  font-size: 42px;
-  margin: 50px;
-}
+
 
 
 .setka {
@@ -172,4 +63,15 @@ opacity: 1; /* Показываем полоску при наведении */
   border: none;
   background-color: #00000000;
   cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out; /* Плавное изменение трансформации */
+}
+
+button:hover {
+  transform: scale(1.05); /* Увеличение на 5% */
 }
