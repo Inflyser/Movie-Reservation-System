@@ -167,3 +167,9 @@ opacity: 1; /* Показываем полоску при наведении */
   background-size: 25px 25px; 
   z-index: 1000;/* Размер ячеек сетки */
 }
+
+.button__image {
+  border: none;
+  background-color: #00000000;
+  cursor: pointer;
+}
