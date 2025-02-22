@@ -1,0 +1,31 @@
+
+/* Для JS */
+
+
+.fade-in-text {
+    opacity: 0; /* Скрываем текст по умолчанию */
+    transition: opacity 1.5s ease; /* Плавный переход для изменения прозрачности */
+  }
+  
+  .fade-in-text.visible {
+    opacity: 1; /* Показываем текст при добавлении класса visible */
+  }
+  
+  .fade-in-text.hidden {
+    opacity: 0; /* Скрываем текст при добавлении класса hidden */
+  }
+  
+  
+  
+  .fade-in-image {
+    opacity: 0; /* Скрываем изображение по умолчанию */
+    transition: opacity 1.5s ease; /* Плавный переход для изменения прозрачности */
+  }
+  
+  .fade-in-image.visible {
+    opacity: 1; /* Показываем изображение при добавлении класса visible */
+  }
+  
+  .fade-in-image.hidden {
+    opacity: 0; /* Скрываем изображение при добавлении класса hidden */
+  }
